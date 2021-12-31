@@ -3,6 +3,8 @@
   "displayName": "Next.js page launcher",
   "description": "Launch your next-js pages directly from the context menu as you debug them",
   "icon": "images/icon.png",
+  "publisher": "Jonhyfun",
+  "repository": {"url": "https://github.com/Jonhyfun/nextjs-launch-file-in-browser"},
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.63.0"
@@ -34,12 +36,17 @@
       {
         "id": "port",
         "title": "Next.js Page Launcher",
-        "order": 1,
         "properties": {
           "next-js-page-launcher.settings.port": {
             "type": "number",
             "default": 3000,
 						"description": "Next.js port currently in use"
+          },
+          "next-js-page-launcher.settings.protocol": {
+            "type": "string",
+            "enum": ["http", "https"],
+            "default": "http",
+						"description": "Next.js server protocol"
           }
         }
       }
