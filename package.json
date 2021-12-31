@@ -2,7 +2,8 @@
   "name": "next-js-page-launcher",
   "displayName": "Next.js page launcher",
   "description": "Launch your next-js pages directly from the context menu as you debug them",
-  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.63.0"
   },
